@@ -1,7 +1,7 @@
 /* Sizga users array beriladi, siz funksiya yasaysiz, 
- u funksiyaga users arrayni va telefon nomer kiritaman. 
- Va u menga returnida shu nomer kimga tegishliligini 
- chiqarib beradi. Agar yo'q bo'lsa bo'sh string qaytaradi.
+u funksiyaga users arrayni va telefon nomer kiritaman. 
+Va u menga returnida shu nomer kimga tegishliligini 
+chiqarib beradi. Agar yo'q bo'lsa bo'sh string qaytaradi.
 */
 let users = [
     {
@@ -34,19 +34,32 @@ let users = [
     }
 ]
 
+// code shu yerda yozilgan `downarrow`
 
+let userNum = prompt("Please enter a number")
 
 function findUser(array, number) {
     let user = ""
-
-
+    
+    for (let i = 0; i < array.length; i++) {
+        if ( number == users[i].telNumber);
+        user = users[i].name
+    }
     return user
 }
 
+findUser(users, userNum)
 
-findUser(users, 998911645022)
+
+
+console.log(findUser(users, userNumber));
+alert(findUser(users, userNumber))
+
 
 // Result
--- Toxir
+
+
+
+
 
 
